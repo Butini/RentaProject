@@ -9,4 +9,9 @@
     <Folder Include="Implementation\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj" />
+    <ProjectReference Include="..\RentaProject.Domain.Entities\RentaProject.Domain.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
