@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Domain.Entitie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Infrastructure.Repository", "RentaProject.Infrastructure.Repository\RentaProject.Infrastructure.Repository.csproj", "{6901091F-BEB2-4089-92BD-0375D999BBEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProejct.Cross.Logger", "RentaProejct.Cross.Logger\RentaProejct.Cross.Logger.csproj", "{39F7D03E-FDCC-4072-9BE6-DF50168E9D60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Cross.Logger", "RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj", "{39F7D03E-FDCC-4072-9BE6-DF50168E9D60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

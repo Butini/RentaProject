@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj" />
+    <ProjectReference Include="..\RentaProject.Application.Service\RentaProject.Application.Service.csproj" />
+  </ItemGroup>
+
 </Project>
