@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Implementation\" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj" />
     <ProjectReference Include="..\RentaProject.Domain.Entities\RentaProject.Domain.Entities.csproj" />
+    <ProjectReference Include="..\RentaProject.Infrastructure.Utils\RentaProject.Infrastructure.Utils.csproj" />
   </ItemGroup>
 
 </Project>

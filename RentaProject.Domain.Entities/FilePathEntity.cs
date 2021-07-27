@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace RentaProject.Domain.Entities
 {
-    public class FileManager
+    public class FilePathEntity
     {
-        public string MyFile { get; set; }
+        public string Path { get; set; }
 
         public override bool Equals(object obj)
         {
-            return obj is FileManager manager &&
-                   MyFile == manager.MyFile;
+            return obj is FilePathEntity manager &&
+                   Path == manager.Path;
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(MyFile);
+            return HashCode.Combine(Path);
         }
     }
 }

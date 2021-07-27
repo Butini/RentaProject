@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj" />
     <ProjectReference Include="..\RentaProject.Application.Service\RentaProject.Application.Service.csproj" />
   </ItemGroup>
 
