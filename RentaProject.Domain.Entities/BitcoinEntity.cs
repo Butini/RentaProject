@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace RentaProject.Domain.Entities
 {
-    public class Bitcoin : ActionEntity
+    public class BitcoinEntity : ActionEntity
     {
         public decimal OpenRate { get; set; }
         public decimal CloseRate { get; set; }
         public DateTime OpenDate { get; set; }
         public DateTime CloseDate { get; set; }
 
-        public Bitcoin(string name, decimal profit, decimal fees, 
+        public BitcoinEntity(string name, decimal profit, decimal fees, 
             decimal openRate, decimal closeRate, DateTime openDate, DateTime closeDate) : base(name, profit, fees)
         {
             OpenRate = openRate;
