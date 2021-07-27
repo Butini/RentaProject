@@ -1,16 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Implementation\" />
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj" />
     <ProjectReference Include="..\RentaProject.Domain.Entities\RentaProject.Domain.Entities.csproj" />
   </ItemGroup>
 

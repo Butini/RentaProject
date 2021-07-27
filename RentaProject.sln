@@ -15,13 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Cross-Cutting", "5 - Cr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentaProject.Distributed.WebApi", "RentaProject.Distributed.WebApi\RentaProject.Distributed.WebApi.csproj", "{52C81E8A-F397-4284-81D0-85ADB5E76894}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Application.Service", "RentaProject.Application.Service\RentaProject.Application.Service.csproj", "{034E63A7-D9D3-4440-85CF-E0FF06D65062}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentaProject.Application.Service", "RentaProject.Application.Service\RentaProject.Application.Service.csproj", "{034E63A7-D9D3-4440-85CF-E0FF06D65062}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Domain.Entities", "RentaProject.Domain.Entities\RentaProject.Domain.Entities.csproj", "{8964716F-82A1-46D8-A30A-33EDA2B3DEEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentaProject.Domain.Entities", "RentaProject.Domain.Entities\RentaProject.Domain.Entities.csproj", "{8964716F-82A1-46D8-A30A-33EDA2B3DEEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Infrastructure.Repository", "RentaProject.Infrastructure.Repository\RentaProject.Infrastructure.Repository.csproj", "{6901091F-BEB2-4089-92BD-0375D999BBEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentaProject.Infrastructure.Repository", "RentaProject.Infrastructure.Repository\RentaProject.Infrastructure.Repository.csproj", "{6901091F-BEB2-4089-92BD-0375D999BBEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Cross.Logger", "RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj", "{39F7D03E-FDCC-4072-9BE6-DF50168E9D60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentaProject.Cross.Logger", "RentaProejct.Cross.Logger\RentaProject.Cross.Logger.csproj", "{39F7D03E-FDCC-4072-9BE6-DF50168E9D60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentaProject.Infrastructure.Utils", "RentaProject.Infrastructure.Utils\RentaProject.Infrastructure.Utils.csproj", "{74A81C9B-33A4-432D-A8B6-6E95873CB538}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{39F7D03E-FDCC-4072-9BE6-DF50168E9D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39F7D03E-FDCC-4072-9BE6-DF50168E9D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39F7D03E-FDCC-4072-9BE6-DF50168E9D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A81C9B-33A4-432D-A8B6-6E95873CB538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A81C9B-33A4-432D-A8B6-6E95873CB538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A81C9B-33A4-432D-A8B6-6E95873CB538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A81C9B-33A4-432D-A8B6-6E95873CB538}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{8964716F-82A1-46D8-A30A-33EDA2B3DEEB} = {F50BC486-5868-4F54-9E42-C56DC06C1CA1}
 		{6901091F-BEB2-4089-92BD-0375D999BBEB} = {5279F835-260C-4706-BAFB-645B0C4D003F}
 		{39F7D03E-FDCC-4072-9BE6-DF50168E9D60} = {95C1FB2C-DE64-44AA-9099-D992E09AAFAF}
+		{74A81C9B-33A4-432D-A8B6-6E95873CB538} = {5279F835-260C-4706-BAFB-645B0C4D003F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31C6CB68-CCFF-44BD-9F19-D138946A20F8}
