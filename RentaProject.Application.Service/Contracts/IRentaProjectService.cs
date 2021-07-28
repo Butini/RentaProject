@@ -9,6 +9,6 @@ namespace RentaProject.Application.Service.Contracts
 {
     public interface IRentaProjectService
     {
-        public IFormFile NewIncomeStatement(IFormFile formFile);
+        public Task<string> NewIncomeStatement(IFormFile formFile);
     }
 }

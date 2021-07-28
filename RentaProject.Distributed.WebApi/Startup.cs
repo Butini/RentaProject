@@ -7,6 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using RentaProject.Application.Service.Contracts;
+using RentaProject.Application.Service.Implementation;
+using RentaProject.Infrastructure.Repository.Contracts;
+using RentaProject.Infrastructure.Repository.Implementation;
+using RentaProject.Infrastructure.Utils.Contracts;
+using RentaProject.Infrastructure.Utils.Implementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,12 +32,16 @@ namespace RentaProject.Distributed.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RentaProject.Distributed.WebApi", Version = "v1" });
             });
+
+            services.AddScoped<IRentaProjectService, RentaProjectService>();
+            services.AddScoped<IExcelManager, ExcelManager>();
+            services.AddScoped<IFileManager, FileManager>();
+            services.AddScoped<IRentaProjectRepository, RentaProjectRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

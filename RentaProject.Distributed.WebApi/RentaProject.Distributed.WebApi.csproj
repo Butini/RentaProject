@@ -15,4 +15,8 @@
     <ProjectReference Include="..\RentaProject.Application.Service\RentaProject.Application.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Upload\file\" />
+  </ItemGroup>
+
 </Project>

@@ -84,8 +84,9 @@ namespace RentaProject.Infrastructure.Utils.Implementation
             {
                 var wSheet = wBook.Worksheet(1);
                 int row = 2;
+                string nameTEST = wSheet.Cell(row, 2).GetString();
 
-                while (wSheet.Cell(row, 2).GetString().Length == 0)
+                while (wSheet.Cell(row, 2).GetString().Length != 0)
                 {
                     string name = wSheet.Cell(row, 2).GetString();
                     name = ReplaceBuySell(name);

@@ -5,12 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Implementation\" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RentaProject.Domain.Entities\RentaProject.Domain.Entities.csproj" />
+    <ProjectReference Include="..\RentaProject.Infrastructure.Repository\RentaProject.Infrastructure.Repository.csproj" />
   </ItemGroup>
 
 </Project>
