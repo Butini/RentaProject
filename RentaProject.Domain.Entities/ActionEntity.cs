@@ -19,10 +19,10 @@ namespace RentaProject.Domain.Entities
             Fees = Rounding(fees);
         }
 
-        protected void AddActionProfitFees(ActionEntity action)
+        public void AddActionProfitFees(ActionEntity action)
         {
-            Profit = Rounding(Profit + action.Profit);
-            Fees = Rounding(Fees + action.Fees);
+            Profit = Rounding(Profit + Rounding(action.Profit));
+            Fees = Rounding(Fees + Rounding(action.Fees));
         }
 
         protected decimal Rounding(decimal number)
