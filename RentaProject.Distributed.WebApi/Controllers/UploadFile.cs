@@ -12,10 +12,10 @@ namespace RentaProject.Distributed.WebApi.Controllers
     public class UploadFile : ControllerBase
     {
         [HttpPost]
-        [Route("SaveFile")]
+        [Route("IncomeStatement")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> ReadFile(IFormFile file)
+        public async Task<IActionResult> NewIncomeStatement(IFormFile file)
         {
             await WriteFile(file);
 

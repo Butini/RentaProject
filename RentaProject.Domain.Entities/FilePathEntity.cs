@@ -10,6 +10,11 @@ namespace RentaProject.Domain.Entities
     {
         public string Path { get; set; }
 
+        public FilePathEntity(string path)
+        {
+            Path = path;
+        }
+
         public override bool Equals(object obj)
         {
             return obj is FilePathEntity manager &&
