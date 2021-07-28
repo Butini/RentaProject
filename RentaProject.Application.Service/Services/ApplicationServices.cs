@@ -11,10 +11,9 @@ namespace RentaProject.Application.Service.Services
 {
     public static class ApplicationServices
     {
-        public static IServiceCollection AddRepositoryServices(this IServiceCollection services)
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IRentaProjectRepository, RentaProjectRepository>();
-            //services.
             return services;
         }
     }

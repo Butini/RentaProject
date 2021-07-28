@@ -5,40 +5,30 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using RentaProject.Application.Service.Contracts;
 
 namespace RentaProject.Distributed.WebApi.Controllers
 {
     [ApiController]
     public class UploadFile : ControllerBase
     {
+        private readonly IRentaProjectService _rentaProjectService;
+
+        public UploadFile(IRentaProjectService rentaProjectService)
+        {
+            _rentaProjectService = rentaProjectService;
+        }
+
         [HttpPost]
         [Route("IncomeStatement")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> NewIncomeStatement(IFormFile file)
+        public async Task<IActionResult> NewIncomeStatement(IFormFile formFile)
         {
-            await WriteFile(file);
+            string path = await _rentaProjectService.NewIncomeStatement(formFile);
+            var returnFile = System.IO.File.OpenRead(path);
 
-            return Ok();
-        }
-
-        private async Task<bool> WriteFile(IFormFile file)
-        {
-            var pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Upload\\file");
-
-            if (!Directory.Exists(pathBuild))
-            {
-                Directory.CreateDirectory(pathBuild);
-            }
-
-            var path = Path.Combine(pathBuild, file.FileName);
-
-            using (var stream = new FileStream(path, FileMode.Create))
-            {
-                await file.CopyToAsync(stream);
-            }
-
-            return true;
+            return Ok(returnFile);
         }
     }
 }

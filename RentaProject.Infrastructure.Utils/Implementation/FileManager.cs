@@ -37,7 +37,7 @@ namespace RentaProject.Infrastructure.Utils.Implementation
                 await formFile.CopyToAsync(stream);
             }
 
-            return pathBuild;
+            return path;
         }
     }
 }
